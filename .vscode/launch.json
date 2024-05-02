@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Prec plotter",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            // "args": ["-ls"]
+            // "args": ["-vd", "Agung"]
+            // 
+            // "args": ["--plot-monthly", "1.05", "-91", "2000-06-01", "2000-07-01"]
+            "args": ["--plot-weekly", "1.05", "-91", "2000-06-01", "2000-07-01"]
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            // "args": [
+            //     "--polygon",
+            //     "POLYGON ((30 10, 40 40, 20 40, 10 20, 30 10))",
+            //     "--start-date",
+            //     "2021-01-01"
+            // ]
+            // "args": [
+            //     "--colormap",
+            //     "20000601",
+            //     "20000630",
+            //     "--polygon",
+            //     "POLYGON((-91.9439 -1.6795,-89.1154 -1.6795,-89.1154 0.2971,-91.9439 0.2971,-91.9439 -1.6795))",
+            //     "--average",
+            //     "M"
+            // ]
+            "args": [
+                "plot_data.py",
+                "MerapiSenDT76/miaplpy",
+                "--plot-type",
+                "velocity"
+            ]
+        }
+    ]
+}
